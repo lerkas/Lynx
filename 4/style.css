@@ -1,0 +1,35 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+canvas {
+    border: 1px solid grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid grey;
+}
+
+#num {
+    width: 15px; 
+    line-height: 50px;
+    padding: 5px;
+    text-align: center;
+    color: grey;
+}
+
+#text {
+    letter-spacing: 18px;
+    text-align: center;
+    padding-left: 20px;
+    color: grey;
+}
+
+.container {
+    margin: 50px;
+}
