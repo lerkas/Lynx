@@ -62,14 +62,14 @@ function knightsMove() {
         const capacity = [[1,2],[-1,2],[1,-2],[-1,-2],[2,1],[2,-1],[-2,1],[-2,-1]];
         let x = clkCellX + capacity[i][0];
         let y = clkCellY + capacity[i][1];
-            
-            ctx.fillStyle = 'limegreen';
-            ctx.fillRect(
-                x * cellWidth,
-                y * cellWidth,
-                cellWidth,
-                cellWidth
-            );
+
+        ctx.fillStyle = 'limegreen';
+        ctx.fillRect(
+            x * cellWidth,
+            y * cellWidth,
+            cellWidth,
+            cellWidth
+        );
     }
 
     // Повторный вызов функции при каждом новом клике

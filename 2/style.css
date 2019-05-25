@@ -1,0 +1,10 @@
+#container {
+	width: 320px;
+	padding: 15px;
+	margin: 30px;
+	border: 1px solid black;
+}
+
+#input {
+	width: 300px;
+}
