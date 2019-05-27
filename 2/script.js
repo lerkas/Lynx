@@ -16,24 +16,24 @@ const board = {
 const capacity = [[1,2],[-1,2],[1,-2],[-1,-2],[2,1],[2,-1],[-2,1],[-2,-1]];
 
 function getKeyByValue(object, value) {
-  return Object.keys(object).find(key => object[key] == value);
+    return Object.keys(object).find(key => object[key] == value);
 }
 
 function knightsMove() {
-	// Получаем позицию коня (например, D4)
-	let position = document.getElementById('input').value;
-	// Помещаем в массив координаты клетки ( например, [3,4])
-	let cellCoords = board[position];
-	let pos = [];
-	for (let i = 0; i < 8; i++) {
+    // Получаем позицию коня (например, D4)
+    let position = document.getElementById('input').value;
+    // Помещаем в массив координаты клетки ( например, [3,4])
+    let cellCoords = board[position];
+    let pos = [];
+    for (let i = 0; i < 8; i++) {
         let x = cellCoords[0] + capacity[i][0];
         let y = cellCoords[1] + capacity[i][1];
         // Защита от выхода за пределы доски
         if (x >= 0 && x <= 7 && y >= 0 && y <= 7) {
-        	let coords = [x,y];
-        	// Заполняем массив всех возможных позиций коня
-        	pos.push(getKeyByValue(board, String(coords)));
-        } 
+            let coords = [x, y];
+            // Заполняем массив всех возможных позиций коня
+            pos.push(getKeyByValue(board, String(coords)));
+        }
     }
     return pos.join(' ');
 }

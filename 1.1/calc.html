@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="calc.css">
+</head>
+
+<body>
+    <form id="calc" oninput="toCalculate()">
+        <h3>простейший арифметический калькулятор</h3>
+        <h4>введите числа и выберите знак операции,<br>расчёт произойдёт автоматически</h4>
+        <input class="number" name="x" value="0" type="number" onchange="toCalculate()">
+        <select class="operation" name="operation">
+            <option value="1">+</option>
+            <option value="2">−</option>
+            <option value="3">×</option>
+            <option value="4">÷</option>
+        </select>
+        <input class="number" name="y" value="0" type="number">
+        <br><br>
+        <div><output class="number" name="z" for="x y">0</output></div>
+    </form>
+    <script src="calc.js"></script>
+</body>
+
+</html>

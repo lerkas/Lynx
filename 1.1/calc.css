@@ -1,0 +1,26 @@
+body {
+    background: rgba(16, 10, 28, .9);
+    color: #6cacc5;
+    padding: 5em;
+    text-align: center;
+}
+
+.number {
+    color: #c97874;
+    background: rgba(42, 50, 113, .28);
+    border: 0;
+    width: 7em;
+    height: 2em;
+    padding-left: 0.25em;
+    font: inherit;
+}
+
+.operation {
+    color: #c97874;
+    background: rgba(42, 50, 113, .28);
+    border: 0;
+    width: 3em;
+    height: 2em;
+    padding-left: 0.25em;
+    font: inherit;
+}
