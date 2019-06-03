@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.container {
+    border: #000 1px solid;
+    width: 450px;
+    height: 500px;
+    margin: 30px auto;
+}
+
+button {
+    margin: 0 0 10px 20px;
+}
+
+p {
+    margin: 0 0 0 20px;
+}
+
+#board {
+    border: #000 1px solid;
+    width: 402px;
+    height: 402px;
+    margin: 15px auto 15px;
+}
+
+#board div {
+    border: #D3D3D3 1px solid;
+    width: 100px;
+    height: 100px;
+    float: left;
+    cursor: pointer;
+}
